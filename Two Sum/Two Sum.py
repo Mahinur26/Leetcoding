@@ -3,7 +3,7 @@
 #Brute Force Method:
 #Double for loop and check which pair of indices adds up to the target
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         for i in range(len(nums)):
             for j in range(i+1, len(nums)):
                 if ((nums[i] + nums[j]) == target):
@@ -15,7 +15,7 @@ class Solution:
 #Optimal Method:
 #Use a dictionary to store the difference between the target and each number
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         #Will store as value: index
         prevVals = {}
         for index, val in enumerate(nums):
