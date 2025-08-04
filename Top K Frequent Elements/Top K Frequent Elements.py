@@ -4,7 +4,7 @@
 
 #I used a dictionary to contain the frequency of each number, then I used a while loop to find the maximum frequency k times
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         #Number:Frequency
         dictionary = {}
         for num in nums:
