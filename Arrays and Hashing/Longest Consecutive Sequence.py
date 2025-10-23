@@ -28,3 +28,6 @@ class Solution:
         return maxSeq
     #Time Complexity: O(nlogn)
     #Space Complexity: O(1)
+
+#More optimal solution
+
