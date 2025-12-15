@@ -1,5 +1,27 @@
 #Easy
 
+
+#I made another more effecient solution:
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+        D1 = {}
+        for char in s:
+            if char in D1:
+                D1[char] += 1
+            else:
+                D1[char] = 1
+        for char in t:
+            if char not in D1:
+                return False
+            D1[char] -= 1
+            if D1[char]<0:
+                return False
+
+        return True
+
+
 #Brute Force Method:
 #Can sort both strings and compare them, if they are the same then they are anagrams
 class Solution:
